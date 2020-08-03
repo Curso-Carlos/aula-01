@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Aula 01</title>
+    </head>
+
+    <body>
+        <h1>Aula 01</h1>
+
+        <script type="text/javascript">
+            let frutas = ['Maçã', 'Banana', 'Laranja', 'Manga'];
+            let multi = [
+                [
+                    'Laranja',
+                    'Limão',
+                    'Lima'
+                ],
+
+                [
+                    'Morango',
+                    'Amora',
+                    'Framboesa'
+                ]
+            ];
+
+            console.info("Arrays Unidimensionais");
+            console.log(frutas[3]);
+            console.log(frutas[1]);
+
+            console.info("Arrays Multidimensionais");
+            console.log(multi[1][0]);
+            console.log(multi[0][2]);
+
+            let n1 = 5;
+            let n2 = 5;
+
+            function soma(n1, n2) {
+                return n1 + n2;
+            }
+
+            function subtracao(n1, n2) {
+                return n1 - n2;
+            }
+
+            function multiplicacao(n1, n2) {
+                return n1 * n2;
+            }
+
+            function divisao(n1, n2) {
+                return n1 / n2;
+            }
+
+            function mod(n1, n2) {
+                return n1 % n2;
+            }
+
+            console.info("Funções Aritméticas");
+            console.log('Soma: ' + soma(n1, n2));
+            console.log('Subtração: ' + subtracao(n1, n2));
+            console.log('Multiplicação: ' + multiplicacao(n1, n2));
+            console.log('Divisão: ' + divisao(n1, n2));
+            console.log('Módulo: ' + mod(n1, n2));
+
+            function pitagoras(a, b) {
+                let c = Math.pow(a, 2) + Math.pow(b, 2);
+                return Math.sqrt(c);
+            }
+
+            function numAleatorio() {
+                let num = Math.random() * 100;
+                return Math.floor(num);
+            }
+            
+            function parImpar(num) {
+                if (num % 2 == 0) {
+                    return "Par";
+                }
+                
+                return "Ímpar";
+            }
+
+            let aleatorio = numAleatorio();
+
+            console.info("Arrays Matemáticas");
+            console.log('Cateto: ' + pitagoras(3, 4));
+            console.log('Número Aleatório: ' + aleatorio);
+            console.log('O Número ' + aleatorio + ' é Um Número: ' + parImpar(aleatorio))
+        </script>
+    </body>
+</html>
